@@ -1,0 +1,35 @@
+body {
+  font-style: "Montserrat";
+  width: 100vw;
+  height: 100vh;
+}
+body main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+body main .left {
+  display: grid;
+  grid-column: 1/2;
+}
+body main .left form {
+  padding: 2rem;
+  font-family: "Special Elite";
+  height: 60%;
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+  background: linear-gradient(45deg, #5c677d, #e2eafc, #ccdbfd, #e2eafc, #5c677d);
+  color: #00193A;
+  font-size: 1rem;
+  line-height: 55px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 10px 5px 5px #7A0213;
+}
+body main .left form h2 fieldset {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
