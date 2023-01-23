@@ -2,18 +2,19 @@ body {
   font-style: "Montserrat";
   width: 100vw;
   height: 100vh;
+  background-color: #3B556D;
 }
 body main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 body main .left {
   display: grid;
   grid-column: 1/2;
 }
-body main .left form {
+body main .left > form {
   padding: 2rem;
   font-family: "Special Elite";
   height: 60%;
@@ -28,8 +29,66 @@ body main .left form {
   border-radius: 30px;
   box-shadow: 10px 5px 5px #7A0213;
 }
-body main .left form h2 fieldset {
+body main .left > form h2 {
+  text-align: center;
+}
+body main .left > form fieldset {
   border: none;
+}
+body main .left > form fieldset label {
+  display: grid;
+  align-items: start;
+  justify-content: space-between;
+}
+body main .left > form fieldset input {
+  background-color: #EBF2FA;
+}
+body main .left > form fieldset button {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 30px;
+  align-self: center;
+  justify-self: center;
+}
+
+.right {
+  display: grid;
+  grid-column: 2/3;
+  border-left: solid;
+}
+.right > form {
+  padding: 2rem;
+  font-family: "Special Elite";
+  height: 60%;
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+  background: linear-gradient(45deg, #5c677d, #e2eafc, #ccdbfd, #e2eafc, #5c677d);
+  color: #00193A;
+  font-size: 1rem;
+  line-height: 55px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 10px 5px 5px #7A0213;
+}
+.right > form h2 {
+  text-align: center;
+}
+.right > form fieldset {
+  border: none;
+}
+.right > form fieldset label {
+  display: grid;
+  align-items: start;
+  justify-content: space-between;
+}
+.right > form fieldset input {
+  background-color: #EBF2FA;
+}
+.right > form fieldset button {
+  height: 5vh;
+  width: 10vw;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
